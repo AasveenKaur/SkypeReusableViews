@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F0985701D08C749007B93C4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F09856E1D08C749007B93C4 /* Utils.swift */; };
+		5F09857E1D08D95D007B93C4 /* SfBConversationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F09857D1D08D95D007B93C4 /* SfBConversationHelper.m */; };
+		5F0985821D08DEBE007B93C4 /* SkypeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0985811D08DEBE007B93C4 /* SkypeUI.framework */; };
+		5F0985841D08DEEA007B93C4 /* SkypeForBusiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0985831D08DEEA007B93C4 /* SkypeForBusiness.framework */; };
+		5F2086EE1CF77E1900D2DA2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2086ED1CF77E1900D2DA2D /* AppDelegate.swift */; };
+		5F2086F01CF77E1900D2DA2D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2086EF1CF77E1900D2DA2D /* VideoViewController.swift */; };
+		5F2086F31CF77E1900D2DA2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2086F11CF77E1900D2DA2D /* Main.storyboard */; };
+		5F2086F51CF77E1900D2DA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2086F41CF77E1900D2DA2D /* Assets.xcassets */; };
+		5F2086F81CF77E1900D2DA2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2086F61CF77E1900D2DA2D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F2086FF1CF77E1900D2DA2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F2086E21CF77E1900D2DA2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F2086E91CF77E1900D2DA2D;
+			remoteInfo = textSharedView;
+		};
+		5F20870A1CF77E1900D2DA2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F2086E21CF77E1900D2DA2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F2086E91CF77E1900D2DA2D;
+			remoteInfo = textSharedView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F20871E1CF77E8D00D2DA2D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F09856E1D08C749007B93C4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5F09857C1D08D95D007B93C4 /* SfBConversationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SfBConversationHelper.h; sourceTree = "<group>"; };
+		5F09857D1D08D95D007B93C4 /* SfBConversationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SfBConversationHelper.m; sourceTree = "<group>"; };
+		5F09857F1D08D9EC007B93C4 /* TestReusableView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestReusableView-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		5F0985811D08DEBE007B93C4 /* SkypeUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkypeUI.framework; path = /Users/aasveenkaur/TestReusableView/SkypeUI.framework; sourceTree = "<absolute>"; };
+		5F0985831D08DEEA007B93C4 /* SkypeForBusiness.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkypeForBusiness.framework; path = /Users/aasveenkaur/TestReusableView/SkypeForBusiness.framework; sourceTree = "<absolute>"; };
+		5F2086EA1CF77E1900D2DA2D /* TestReusableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestReusableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2086ED1CF77E1900D2DA2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F2086EF1CF77E1900D2DA2D /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		5F2086F21CF77E1900D2DA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F2086F41CF77E1900D2DA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F2086F71CF77E1900D2DA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F2086F91CF77E1900D2DA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F2086FE1CF77E1900D2DA2D /* TestReusableView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestReusableView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2087091CF77E1900D2DA2D /* TestReusableView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestReusableView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F2086E71CF77E1900D2DA2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0985821D08DEBE007B93C4 /* SkypeUI.framework in Frameworks */,
+				5F0985841D08DEEA007B93C4 /* SkypeForBusiness.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F2086FB1CF77E1900D2DA2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F2087061CF77E1900D2DA2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F09856B1D08C408007B93C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F0985741D08C7EC007B93C4 /* Video Chat */ = {
+			isa = PBXGroup;
+			children = (
+				5F2086EF1CF77E1900D2DA2D /* VideoViewController.swift */,
+			);
+			name = "Video Chat";
+			sourceTree = "<group>";
+		};
+		5F0985751D08C8DA007B93C4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5F09857C1D08D95D007B93C4 /* SfBConversationHelper.h */,
+				5F09857D1D08D95D007B93C4 /* SfBConversationHelper.m */,
+				5F09857F1D08D9EC007B93C4 /* TestReusableView-Bridging-Header.h */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		5F2086E11CF77E1900D2DA2D = {
+			isa = PBXGroup;
+			children = (
+				5F2086EC1CF77E1900D2DA2D /* TestReusableView */,
+				5F09856B1D08C408007B93C4 /* Frameworks */,
+				5F2086EB1CF77E1900D2DA2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F2086EB1CF77E1900D2DA2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F2086EA1CF77E1900D2DA2D /* TestReusableView.app */,
+				5F2086FE1CF77E1900D2DA2D /* TestReusableView.xctest */,
+				5F2087091CF77E1900D2DA2D /* TestReusableView.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F2086EC1CF77E1900D2DA2D /* TestReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				5F0985751D08C8DA007B93C4 /* Helper */,
+				5F0985741D08C7EC007B93C4 /* Video Chat */,
+				5F09856E1D08C749007B93C4 /* Utils.swift */,
+				5F2086ED1CF77E1900D2DA2D /* AppDelegate.swift */,
+				5F2086F11CF77E1900D2DA2D /* Main.storyboard */,
+				5F2086F41CF77E1900D2DA2D /* Assets.xcassets */,
+				5F2086F61CF77E1900D2DA2D /* LaunchScreen.storyboard */,
+				5F2086F91CF77E1900D2DA2D /* Info.plist */,
+			);
+			path = TestReusableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F2086E91CF77E1900D2DA2D /* TestReusableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F2087121CF77E1900D2DA2D /* Build configuration list for PBXNativeTarget "TestReusableView" */;
+			buildPhases = (
+				5F2086E61CF77E1900D2DA2D /* Sources */,
+				5F2086E71CF77E1900D2DA2D /* Frameworks */,
+				5F2086E81CF77E1900D2DA2D /* Resources */,
+				5F20871E1CF77E8D00D2DA2D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestReusableView;
+			productName = textSharedView;
+			productReference = 5F2086EA1CF77E1900D2DA2D /* TestReusableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F2086FD1CF77E1900D2DA2D /* TestReusableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F2087151CF77E1900D2DA2D /* Build configuration list for PBXNativeTarget "TestReusableViewTests" */;
+			buildPhases = (
+				5F2086FA1CF77E1900D2DA2D /* Sources */,
+				5F2086FB1CF77E1900D2DA2D /* Frameworks */,
+				5F2086FC1CF77E1900D2DA2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F2087001CF77E1900D2DA2D /* PBXTargetDependency */,
+			);
+			name = TestReusableViewTests;
+			productName = textSharedViewTests;
+			productReference = 5F2086FE1CF77E1900D2DA2D /* TestReusableView.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F2087081CF77E1900D2DA2D /* TestReusableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F2087181CF77E1900D2DA2D /* Build configuration list for PBXNativeTarget "TestReusableViewUITests" */;
+			buildPhases = (
+				5F2087051CF77E1900D2DA2D /* Sources */,
+				5F2087061CF77E1900D2DA2D /* Frameworks */,
+				5F2087071CF77E1900D2DA2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F20870B1CF77E1900D2DA2D /* PBXTargetDependency */,
+			);
+			name = TestReusableViewUITests;
+			productName = textSharedViewUITests;
+			productReference = 5F2087091CF77E1900D2DA2D /* TestReusableView.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F2086E21CF77E1900D2DA2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Aasveen Kaur";
+				TargetAttributes = {
+					5F2086E91CF77E1900D2DA2D = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UYUY4NQE32;
+					};
+					5F2086FD1CF77E1900D2DA2D = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UYUY4NQE32;
+						TestTargetID = 5F2086E91CF77E1900D2DA2D;
+					};
+					5F2087081CF77E1900D2DA2D = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UYUY4NQE32;
+						TestTargetID = 5F2086E91CF77E1900D2DA2D;
+					};
+				};
+			};
+			buildConfigurationList = 5F2086E51CF77E1900D2DA2D /* Build configuration list for PBXProject "TestReusableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F2086E11CF77E1900D2DA2D;
+			productRefGroup = 5F2086EB1CF77E1900D2DA2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F2086E91CF77E1900D2DA2D /* TestReusableView */,
+				5F2086FD1CF77E1900D2DA2D /* TestReusableViewTests */,
+				5F2087081CF77E1900D2DA2D /* TestReusableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F2086E81CF77E1900D2DA2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F2086F81CF77E1900D2DA2D /* LaunchScreen.storyboard in Resources */,
+				5F2086F51CF77E1900D2DA2D /* Assets.xcassets in Resources */,
+				5F2086F31CF77E1900D2DA2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F2086FC1CF77E1900D2DA2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F2087071CF77E1900D2DA2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F2086E61CF77E1900D2DA2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F09857E1D08D95D007B93C4 /* SfBConversationHelper.m in Sources */,
+				5F2086F01CF77E1900D2DA2D /* VideoViewController.swift in Sources */,
+				5F2086EE1CF77E1900D2DA2D /* AppDelegate.swift in Sources */,
+				5F0985701D08C749007B93C4 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F2086FA1CF77E1900D2DA2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F2087051CF77E1900D2DA2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F2087001CF77E1900D2DA2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F2086E91CF77E1900D2DA2D /* TestReusableView */;
+			targetProxy = 5F2086FF1CF77E1900D2DA2D /* PBXContainerItemProxy */;
+		};
+		5F20870B1CF77E1900D2DA2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F2086E91CF77E1900D2DA2D /* TestReusableView */;
+			targetProxy = 5F20870A1CF77E1900D2DA2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F2086F11CF77E1900D2DA2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F2086F21CF77E1900D2DA2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F2086F61CF77E1900D2DA2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F2086F71CF77E1900D2DA2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F2087101CF77E1900D2DA2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F2087111CF77E1900D2DA2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F2087131CF77E1900D2DA2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TestReusableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.skype.appsdk.samples.TestReusableView;
+				PRODUCT_NAME = TestReusableView;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestReusableView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F2087141CF77E1900D2DA2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TestReusableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.skype.appsdk.samples.TestReusableView;
+				PRODUCT_NAME = TestReusableView;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestReusableView-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		5F2087161CF77E1900D2DA2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = textSharedViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.skype.appsdk.samples.textSharedViewTests;
+				PRODUCT_NAME = TestReusableView;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestReusableView.app/TestReusableView";
+			};
+			name = Debug;
+		};
+		5F2087171CF77E1900D2DA2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = textSharedViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.skype.appsdk.samples.textSharedViewTests;
+				PRODUCT_NAME = TestReusableView;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestReusableView.app/TestReusableView";
+			};
+			name = Release;
+		};
+		5F2087191CF77E1900D2DA2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = textSharedViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.skype.appsdk.samples.textSharedViewUITests;
+				PRODUCT_NAME = TestReusableView;
+				TEST_TARGET_NAME = textSharedView;
+			};
+			name = Debug;
+		};
+		5F20871A1CF77E1900D2DA2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = textSharedViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.skype.appsdk.samples.textSharedViewUITests;
+				PRODUCT_NAME = TestReusableView;
+				TEST_TARGET_NAME = textSharedView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F2086E51CF77E1900D2DA2D /* Build configuration list for PBXProject "TestReusableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F2087101CF77E1900D2DA2D /* Debug */,
+				5F2087111CF77E1900D2DA2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F2087121CF77E1900D2DA2D /* Build configuration list for PBXNativeTarget "TestReusableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F2087131CF77E1900D2DA2D /* Debug */,
+				5F2087141CF77E1900D2DA2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F2087151CF77E1900D2DA2D /* Build configuration list for PBXNativeTarget "TestReusableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F2087161CF77E1900D2DA2D /* Debug */,
+				5F2087171CF77E1900D2DA2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F2087181CF77E1900D2DA2D /* Build configuration list for PBXNativeTarget "TestReusableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F2087191CF77E1900D2DA2D /* Debug */,
+				5F20871A1CF77E1900D2DA2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F2086E21CF77E1900D2DA2D /* Project object */;
+}
