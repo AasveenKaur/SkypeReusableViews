@@ -3,7 +3,7 @@
 
 ##TestReusableView
 
-This is a demo project that uses reusable Video chat screen. The reusable Video chat screen package consist of three parts, namely: 
+This is a sample application that is using the reusable Video chat screen. The reusable Video chat screen package consist of three parts, namely: 
  1. SFBVidoeChatViewController.xib - General Video screen UI.
  2. SFBVidoeChatViewController.swift - Video screen controller class.
  3. Utils.swift - Class with common helper methods.
