@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let audioSession = AVAudioSession.sharedInstance()
+        
+        do {
+            try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord,
+                                         withOptions: [.AllowBluetooth, .MixWithOthers, .DuckOthers])
+            try audioSession.setMode(AVAudioSessionModeVoiceChat)
+        } catch {
+            UIAlertView(title: "Audio Session failed", message: "\(error)", delegate: nil, cancelButtonTitle: "OK").show()
+        }
+        
         return true
     }
 
