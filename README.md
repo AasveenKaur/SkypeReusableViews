@@ -22,8 +22,7 @@ These are grouped under **ReusableUI - Video Chat** folder in **TestReusableView
  
  > Note: Use **MainViewController.swift class** function - _presentSFBVidoeChatViewControllerModally_ and _dismissSFBVidoeChatViewController_ to present the video chat screen modally.
  
- 
- ##Using reusable video chat screen 
+##Using reusable video chat screen 
  
  Integrating the reusable video chat screen in your application is simple. With the following steps, You can start video chat with minimum lines of code.
  
