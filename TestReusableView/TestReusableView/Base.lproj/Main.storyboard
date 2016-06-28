@@ -8,7 +8,7 @@
         <!--Main -->
         <scene sceneID="FDs-6e-56j">
             <objects>
-                <viewController id="gFf-gf-N6X" userLabel="Main " sceneMemberID="viewController">
+                <viewController id="gFf-gf-N6X" userLabel="Main " customClass="MainViewController" customModule="TestReusableView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QnA-Ge-C81"/>
                         <viewControllerLayoutGuide type="bottom" id="Ud2-ww-ujK"/>
@@ -28,7 +28,7 @@
                                         <rect key="frame" x="0.0" y="80" width="146" height="30"/>
                                         <state key="normal" title="Ask using Video Chat"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" identifier="segueToVideoChat" id="rNj-uS-y5o"/>
+                                            <action selector="startVideoChat:" destination="gFf-gf-N6X" eventType="touchUpInside" id="mrb-6x-fL9"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -53,28 +53,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdg-H5-DFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="451" y="387"/>
-        </scene>
-        <!--Video Chat-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="VideoViewController" customModule="TestReusableView" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="VideoChatView" customModule="SkypeUI">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Video Chat" id="5ff-JK-A7R"/>
-                    <connections>
-                        <outlet property="myVideoView" destination="8bC-Xf-vdC" id="ffn-Cl-uAZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1173" y="212"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sQu-W2-gRX">

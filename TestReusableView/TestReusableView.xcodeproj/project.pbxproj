@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		5F0985701D08C749007B93C4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F09856E1D08C749007B93C4 /* Utils.swift */; };
 		5F09857E1D08D95D007B93C4 /* SfBConversationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F09857D1D08D95D007B93C4 /* SfBConversationHelper.m */; };
-		5F0985821D08DEBE007B93C4 /* SkypeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0985811D08DEBE007B93C4 /* SkypeUI.framework */; };
-		5F0985841D08DEEA007B93C4 /* SkypeForBusiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0985831D08DEEA007B93C4 /* SkypeForBusiness.framework */; };
 		5F2086EE1CF77E1900D2DA2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2086ED1CF77E1900D2DA2D /* AppDelegate.swift */; };
-		5F2086F01CF77E1900D2DA2D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2086EF1CF77E1900D2DA2D /* VideoViewController.swift */; };
 		5F2086F31CF77E1900D2DA2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2086F11CF77E1900D2DA2D /* Main.storyboard */; };
 		5F2086F51CF77E1900D2DA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2086F41CF77E1900D2DA2D /* Assets.xcassets */; };
 		5F2086F81CF77E1900D2DA2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2086F61CF77E1900D2DA2D /* LaunchScreen.storyboard */; };
+		5FDECE861D21A10D00325E72 /* SFBVidoeChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FDECE851D21A10D00325E72 /* SFBVidoeChatViewController.xib */; };
+		5FDECE881D21A15800325E72 /* SFBVidoeChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDECE871D21A15800325E72 /* SFBVidoeChatViewController.swift */; };
+		5FDECE8C1D21C57B00325E72 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDECE8B1D21C57B00325E72 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,35 +35,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		5F20871E1CF77E8D00D2DA2D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		5F09856E1D08C749007B93C4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5F09857C1D08D95D007B93C4 /* SfBConversationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SfBConversationHelper.h; sourceTree = "<group>"; };
 		5F09857D1D08D95D007B93C4 /* SfBConversationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SfBConversationHelper.m; sourceTree = "<group>"; };
 		5F09857F1D08D9EC007B93C4 /* TestReusableView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestReusableView-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		5F0985811D08DEBE007B93C4 /* SkypeUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkypeUI.framework; path = /Users/aasveenkaur/TestReusableView/SkypeUI.framework; sourceTree = "<absolute>"; };
-		5F0985831D08DEEA007B93C4 /* SkypeForBusiness.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkypeForBusiness.framework; path = /Users/aasveenkaur/TestReusableView/SkypeForBusiness.framework; sourceTree = "<absolute>"; };
 		5F2086EA1CF77E1900D2DA2D /* TestReusableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestReusableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2086ED1CF77E1900D2DA2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F2086EF1CF77E1900D2DA2D /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		5F2086F21CF77E1900D2DA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F2086F41CF77E1900D2DA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F2086F71CF77E1900D2DA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F2086F91CF77E1900D2DA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F2086FE1CF77E1900D2DA2D /* TestReusableView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestReusableView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2087091CF77E1900D2DA2D /* TestReusableView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestReusableView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FDECE851D21A10D00325E72 /* SFBVidoeChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFBVidoeChatViewController.xib; sourceTree = "<group>"; };
+		5FDECE871D21A15800325E72 /* SFBVidoeChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBVidoeChatViewController.swift; sourceTree = "<group>"; };
+		5FDECE8B1D21C57B00325E72 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F0985821D08DEBE007B93C4 /* SkypeUI.framework in Frameworks */,
-				5F0985841D08DEEA007B93C4 /* SkypeForBusiness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,14 +83,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5F0985741D08C7EC007B93C4 /* Video Chat */ = {
-			isa = PBXGroup;
-			children = (
-				5F2086EF1CF77E1900D2DA2D /* VideoViewController.swift */,
-			);
-			name = "Video Chat";
 			sourceTree = "<group>";
 		};
 		5F0985751D08C8DA007B93C4 /* Helper */ = {
@@ -140,16 +117,26 @@
 		5F2086EC1CF77E1900D2DA2D /* TestReusableView */ = {
 			isa = PBXGroup;
 			children = (
+				5FDECE8D1D21CD4000325E72 /* ReusableUI - Video Chat */,
 				5F0985751D08C8DA007B93C4 /* Helper */,
-				5F0985741D08C7EC007B93C4 /* Video Chat */,
-				5F09856E1D08C749007B93C4 /* Utils.swift */,
-				5F2086ED1CF77E1900D2DA2D /* AppDelegate.swift */,
+				5FDECE8B1D21C57B00325E72 /* MainViewController.swift */,
 				5F2086F11CF77E1900D2DA2D /* Main.storyboard */,
+				5F2086ED1CF77E1900D2DA2D /* AppDelegate.swift */,
 				5F2086F41CF77E1900D2DA2D /* Assets.xcassets */,
 				5F2086F61CF77E1900D2DA2D /* LaunchScreen.storyboard */,
 				5F2086F91CF77E1900D2DA2D /* Info.plist */,
 			);
 			path = TestReusableView;
+			sourceTree = "<group>";
+		};
+		5FDECE8D1D21CD4000325E72 /* ReusableUI - Video Chat */ = {
+			isa = PBXGroup;
+			children = (
+				5FDECE851D21A10D00325E72 /* SFBVidoeChatViewController.xib */,
+				5FDECE871D21A15800325E72 /* SFBVidoeChatViewController.swift */,
+				5F09856E1D08C749007B93C4 /* Utils.swift */,
+			);
+			name = "ReusableUI - Video Chat";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +149,6 @@
 				5F2086E61CF77E1900D2DA2D /* Sources */,
 				5F2086E71CF77E1900D2DA2D /* Frameworks */,
 				5F2086E81CF77E1900D2DA2D /* Resources */,
-				5F20871E1CF77E8D00D2DA2D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FDECE861D21A10D00325E72 /* SFBVidoeChatViewController.xib in Resources */,
 				5F2086F81CF77E1900D2DA2D /* LaunchScreen.storyboard in Resources */,
 				5F2086F51CF77E1900D2DA2D /* Assets.xcassets in Resources */,
 				5F2086F31CF77E1900D2DA2D /* Main.storyboard in Resources */,
@@ -287,8 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FDECE8C1D21C57B00325E72 /* MainViewController.swift in Sources */,
 				5F09857E1D08D95D007B93C4 /* SfBConversationHelper.m in Sources */,
-				5F2086F01CF77E1900D2DA2D /* VideoViewController.swift in Sources */,
+				5FDECE881D21A15800325E72 /* SFBVidoeChatViewController.swift in Sources */,
 				5F2086EE1CF77E1900D2DA2D /* AppDelegate.swift in Sources */,
 				5F0985701D08C749007B93C4 /* Utils.swift in Sources */,
 			);
