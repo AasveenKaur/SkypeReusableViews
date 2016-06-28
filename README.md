@@ -1,8 +1,5 @@
 # SkypeReusableViews
 
-###SkypeUI
-
-SkypeUI is framework project which provides the _VideoChatView_  which can be reused in any project.
 
 ###TestReusableView
 

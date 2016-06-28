@@ -8,30 +8,28 @@ import Foundation
 import UIKit
 import SkypeForBusiness
 
-let USER_MEETING_URL = "userMeetingUrl"
-let USER_DISPLAY_NAME = "userDisplayName"
-
-var getMeetingURLString : String {
-get {
-    
-    return (NSUserDefaults.standardUserDefaults().objectForKey(USER_MEETING_URL) as? String) ?? NSBundle.mainBundle().objectForInfoDictionaryKey("Skype meeting URL") as! String
-}
-}
-
-var getMeetingDisplayName: String {
-get {
-    
-    return (NSUserDefaults.standardUserDefaults().objectForKey(USER_DISPLAY_NAME) as? String) ?? NSBundle.mainBundle().objectForInfoDictionaryKey("Skype meeting display name") as! String
-}
-
-}
 
 
 extension SfBAlert {
 
-    func show() {
-        UIAlertView(title: "\(level): \(type)",
-            message: "\(error.localizedDescription)", delegate: nil, cancelButtonTitle: "OK").show()
+    func getAlert() -> UIAlertController{
+        //UIAlertView(title: "\(level): \(type)",
+            //message: "\(error.localizedDescription)", delegate: nil, cancelButtonTitle: "OK").show()
+        
+       let alertController = UIAlertController(title:  "\(level): \(type)", message: "\(error.localizedDescription)", preferredStyle: .Alert)
+        
+       alertController.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
+       return alertController
+        
+
     }
 
 }
+
+func getAlertWithError(readableErrorDescription:String)  -> UIAlertController {
+    let alertController:UIAlertController = UIAlertController(title: "ERROR!", message: readableErrorDescription, preferredStyle: .Alert)
+    
+    alertController.addAction(UIAlertAction(title: "Close", style: .Cancel, handler: nil))
+    return alertController
+}
+
