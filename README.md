@@ -16,9 +16,16 @@ These are grouped under **ReusableUI - Video Chat** folder in **TestReusableView
 
   > Note: The SDK comes with a binary for use on physical devices (recommended) and a binary for running the iOS simulator (limited because audio and video function won't work correctly).  The binaries have the same name but are in separate folders. To run your app on a **device**, navigate to the location where you downloaded the App SDK and select the _SkypeForBusiness.framework_ file in the _AppSDKiOS_ folder. To run your app in a **simulator**,  selec the _SkypeForBusiness.framework_ file in the _AppSDKiOSSimulator_ folder.
   
- 2. In **MainViewController.swift class**, modify _startVideoChat_ function to initialize **SFBVidoeChatViewController** class with your _MeetingUrl_ and _MeetingDisplayName_.
+ 2. Add SfBConversationHelper.h/SfBConversationHelper.m to the project from Helper folder in SKypeForBusiness SDK. Uncomment the following line in TestReusableView-Bridging-Header.h file.
+
+   ```swift
+   //Add SfBConversationHelper classes for Audio/Video Chat
+    #import "SfBConversationHelper.h"
+    ```
+  
+ 3. In **MainViewController.swift class**, modify _startVideoChat_ function to initialize **SFBVidoeChatViewController** class with your _MeetingUrl_ and _MeetingDisplayName_.
  
- 3. Clean and run the sample. 
+ 4. Clean and run the sample. 
  
  > Note: Use **MainViewController.swift class** function - _presentSFBVidoeChatViewControllerModally_ and _dismissSFBVidoeChatViewController_ to present the video chat screen modally.
  
