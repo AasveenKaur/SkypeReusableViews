@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5F0985701D08C749007B93C4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F09856E1D08C749007B93C4 /* Utils.swift */; };
-		5F09857E1D08D95D007B93C4 /* SfBConversationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F09857D1D08D95D007B93C4 /* SfBConversationHelper.m */; };
 		5F2086EE1CF77E1900D2DA2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2086ED1CF77E1900D2DA2D /* AppDelegate.swift */; };
 		5F2086F31CF77E1900D2DA2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2086F11CF77E1900D2DA2D /* Main.storyboard */; };
 		5F2086F51CF77E1900D2DA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2086F41CF77E1900D2DA2D /* Assets.xcassets */; };
@@ -35,10 +34,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5FDECE981D233D4300325E72 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5F09856E1D08C749007B93C4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		5F09857C1D08D95D007B93C4 /* SfBConversationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SfBConversationHelper.h; sourceTree = "<group>"; };
-		5F09857D1D08D95D007B93C4 /* SfBConversationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SfBConversationHelper.m; sourceTree = "<group>"; };
 		5F09857F1D08D9EC007B93C4 /* TestReusableView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestReusableView-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		5F2086EA1CF77E1900D2DA2D /* TestReusableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestReusableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2086ED1CF77E1900D2DA2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,8 +98,6 @@
 		5F0985751D08C8DA007B93C4 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				5F09857C1D08D95D007B93C4 /* SfBConversationHelper.h */,
-				5F09857D1D08D95D007B93C4 /* SfBConversationHelper.m */,
 				5F09857F1D08D9EC007B93C4 /* TestReusableView-Bridging-Header.h */,
 			);
 			name = Helper;
@@ -149,6 +157,7 @@
 				5F2086E61CF77E1900D2DA2D /* Sources */,
 				5F2086E71CF77E1900D2DA2D /* Frameworks */,
 				5F2086E81CF77E1900D2DA2D /* Resources */,
+				5FDECE981D233D4300325E72 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,7 +284,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FDECE8C1D21C57B00325E72 /* MainViewController.swift in Sources */,
-				5F09857E1D08D95D007B93C4 /* SfBConversationHelper.m in Sources */,
 				5FDECE881D21A15800325E72 /* SFBVidoeChatViewController.swift in Sources */,
 				5F2086EE1CF77E1900D2DA2D /* AppDelegate.swift in Sources */,
 				5F0985701D08C749007B93C4 /* Utils.swift in Sources */,
